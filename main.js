@@ -75,7 +75,7 @@ async function main() {
                 console.log("for ...");
                 for (const run of runs.data) {
                     if (commit && run.head_sha != commit) {
-                        console.log("continue 1");
+                        console.log(run.head_sha);
                         continue
                     }
                     if (runNumber && run.run_number != runNumber) {
