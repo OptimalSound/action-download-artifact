@@ -84,6 +84,7 @@ async function main() {
                     }
                     if (workflowConclusion && (workflowConclusion != run.conclusion && workflowConclusion != run.status)) {
                         console.log("continue 3");
+                        console.log(workflowConclusion + " -> " + run.conclusion + " -> " + run.status);
                         continue
                     }
                     if (checkArtifacts) {
